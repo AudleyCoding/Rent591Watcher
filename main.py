@@ -1,3 +1,11 @@
+from bs4 import BeautifulSoup
+import requests
+from datetime import timedelta
+import random
+import time
+import re
+import os
+
 class Rent591Watcher:
     def __init__(self, url:str, token:str, wanted_page:int=2):
         self.headers={
