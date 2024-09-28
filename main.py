@@ -11,7 +11,7 @@ class Rent591Watcher:
         self.headers={
             'user-agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36'
             }
-        self.search_url = f'{url}&sort=posttime_desc'
+        self.search_url = f"{url.replace('sort=posttime_desc', '')}&sort=posttime_desc"
         self.__linetoken=token
         self.wanted_page = wanted_page
     
