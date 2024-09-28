@@ -108,7 +108,7 @@ class Rent591Watcher:
                 self.send_message(msg)
 
 # send news with keywords
-url = os.environ['591_URL'] # 591 url
+url = os.environ['URL'] # 591 url
 linetoken = os.environ['LINE_NOTIFY_TOKEN'] # line token
 wanted_page = 2
 bot = Rent591Watcher(url, linetoken, wanted_page)
