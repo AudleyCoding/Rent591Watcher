@@ -1,4 +1,4 @@
-class notify591rent:
+class Rent591Watcher:
     def __init__(self, url:str, token:str, wanted_page:int=2):
         self.headers={
             'user-agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36'
@@ -96,3 +96,20 @@ class notify591rent:
         return r.status_code
     
     def send_new_houses(self):
+        house_ids = self.get_house_id()
+        for id in house_ids:
+            house_detail = self.get_house_detail(id)
+            
+            # check time
+            post_time = house_detail.get('publish').get('postTime')
+            post_time = self.transform_post_time(post_time)
+            if post_time <= timedelta(hours=8): # send if within 8 hours
+                msg = self.generate_message(id, house_detail)
+                self.send_message(msg)
+
+# send news with keywords
+url = os.environ['591_URL'] # 591 url
+linetoken = os.environ['LINE_NOTIFY_TOKEN'] # line token
+wanted_page = 2
+bot = Rent591Watcher(url, linetoken, wanted_page)
+bot.send_new_houses()
