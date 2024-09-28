@@ -19,7 +19,7 @@
 - 專案地址：[github/Rent591Watcher](https://github.com/ryk001/Rent591Watcher/tree/main)
 - 點擊右上角 Fork 專案至自己的帳號底下
 
-## 4. 複製這個專案到自己的帳號
+## 4. 設定 Secret
 - 建立一個名為`URL`的 secret，裡面填上設定條件後的 591 網址
 - 再建立一個名為`LINE_NOTIFY_TOKEN`的 secret，裡面填上 LINE Notify 的金鑰
 
