@@ -71,7 +71,7 @@ class Rent591Watcher:
         address = house_detail.get('favData').get('address').replace('台北市', '')
         post_time = house_detail.get('publish').get('postTime').replace('此房屋在', '')
         update_time = house_detail.get('publish').get('updateTime') #if len(house_detail.get('publish').get('updateTime'))>0 else '-'
-        time_ = f"\n{post_time}{' | ' + update_time if update_time else ''}\n"
+        time_ = f"{post_time}{' | ' + update_time if update_time else ''}"
         note = house_detail.get('favData').get('other').get('desc')
         link = f'https://rent.591.com.tw/{id}'
         
