@@ -29,4 +29,6 @@ Actions 默認是關閉狀態，在 Fork 之後需要先手動執行一次，成
 
 返回項目主頁面，點擊上方的`Actions`，再點擊右側的`Rent591Watcher`，再點擊`Run workflow`
 
+<a href="url"><img src="https://s2.loli.net/2024/09/29/Chqx6IiofseBQ4F.png" width="600" ></a>
+
 運行成功後，就大功告成啦! 有任何疑問與建議歡迎交流，我們下次見!!!
