@@ -22,6 +22,7 @@
 ## 4. 設定 Secret
 - 建立一個名為`URL`的 secret，裡面填上設定條件後的 591 網址
 - 再建立一個名為`LINE_NOTIFY_TOKEN`的 secret，裡面填上 LINE Notify 的金鑰
+<a href="url"><img src="https://s2.loli.net/2024/09/29/vILHKqVw91JuxR3.png" width="600" ></a>
 
 ## 5. 啟用 Actions
 
