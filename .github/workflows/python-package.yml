@@ -3,7 +3,7 @@ name: Rent591Watcher
 on:
   schedule:
   # scheduled at 8, 16, 0am (UTC+8), weekdays
-    - cron: "0 0,8,16 * * *"
+    - cron: "8,13,19 * * *"
   workflow_dispatch:
 
 env:
